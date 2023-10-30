@@ -1,0 +1,36 @@
+export default function getPoints() {
+  const url = "http://127.0.0.1";
+  const pointsSpan = document.querySelector("#points");
+  const userId = localStorage.key(0);
+  const logout = document.querySelector("#logoutBtn");
+
+  function handleClick() {
+    localStorage.removeItem(userId);
+    location = `${url}:5500`;
+  }
+
+  async function points() {
+    const config = {
+      method: "GET",
+      headers: {
+        Authorization: localStorage.getItem(userId),
+      },
+    };
+
+    try {
+      const req = await fetch(`${url}:80/total/points`, config);
+      const res = await req.json();
+      pointsSpan.innerText = res.totalPoints;
+    } catch (error) {
+      console.log(error);
+      const tryAgain = confirm(
+        "Você não está logado. Deseja voltar para a tela de login e tentar novamente?"
+      );
+
+      tryAgain ? (location.href = `${url}:5500`) : null;
+    }
+  }
+
+  window.addEventListener("load", points);
+  logout.addEventListener("click", handleClick);
+}

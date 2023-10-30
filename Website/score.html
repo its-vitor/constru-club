@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo-03.png" type="image/x-icon" />
+    <title>Score</title>
+  </head>
+  <body>
+    <div class="card" style="width: 25rem; margin: 3rem auto">
+      <div class="card-body">
+        <h5 class="card-title">Pontos e Cupons</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+          Veja sua pontuação e seus cupons registrados.
+        </h6>
+        <ul class="list-group-item">
+          <li
+            id="coupon-list"
+            class="list-unstyled card-text font-weight-bold text-info"
+          >
+            <i class="fa-solid fa-ticket"></i> Total de pontos:
+            <span id="points"></span>
+          </li>
+          <li
+            id="coupon-list"
+            class="list-unstyled card-text font-weight-bold text-info"
+          >
+            <i class="fa-solid fa-ticket"></i> Pontos do usuário:
+            <span id="user-points"></span>
+          </li>
+        </ul>
+        <ul
+          class="list-group-item overflow-auto"
+          id="coupons-list"
+          style="max-height: 150px"
+          id="coupon-list"
+          class="list-unstyled card-text font-weight-bold text-info"
+        >
+          <li class="list-unstyled card-text font-weight-bold text-dark">
+            Seus cupons:
+          </li>
+        </ul>
+        <form class="input-group mb-3">
+          <input
+            type="text"
+            id="coupon"
+            class="form-control"
+            placeholder="Nome do cupon"
+            aria-label="Nome do cupon"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="submit"
+            id="button-addon2"
+          >
+            Enviar
+          </button>
+        </form>
+        <span
+          id="status-coupon"
+          class="d-none card-text font-weight-bold text-danger"
+        ></span>
+        <button id="logoutBtn" class="btn btn-dark btn-block">Logout</button>
+        <img
+          style="max-width: 250px"
+          src="./assets/logo-03.png"
+          class="rounded mx-auto my-3 d-block"
+          alt="Logo Desdobra"
+          title="LLE - Desdobra"
+        />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/coupons/index.js"></script>
+  </body>
+</html>

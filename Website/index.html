@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo-03.png" type="image/x-icon" />
+    <title>LLE</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <div class="card">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item text-center">
+            <a
+              class="nav-link active btl"
+              id="pills-home-tab"
+              data-toggle="pill"
+              href="#pills-home"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item text-center">
+            <a
+              class="nav-link btr"
+              id="pills-profile-tab"
+              data-toggle="pill"
+              href="#pills-profile"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+              >Registro</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <form class="form px-4 pt-5">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                placeholder="Senha"
+                required
+              />
+
+              <span id="login-error"></span>
+
+              <button
+                type="submit"
+                id="loginBtn"
+                class="btn btn-dark btn-block"
+              >
+                Login
+              </button>
+
+              <img
+                style="max-width: 250px"
+                src="./assets/logo-03.png"
+                class="rounded mx-auto my-3 d-block"
+                alt="Logo Desdobra"
+                title="LLE - Desdobra"
+              />
+            </form>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <form class="form px-4">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Nome"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+
+              <input
+                type="text"
+                name="cpf"
+                class="form-control"
+                placeholder="CPF"
+                required
+              />
+
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                placeholder="Senha"
+                required
+              />
+
+              <span id="register-error" class="d-none card-text font-weight-bold text-danger"></span>
+
+              <button
+                type="submit"
+                id="registerBtn"
+                class="btn btn-dark btn-block"
+              >
+                Registrar
+              </button>
+
+              <img
+                style="max-width: 250px"
+                src="./assets/logo-03.png"
+                class="rounded mx-auto my-3 d-block"
+                alt="Logo Desdobra"
+                title="LLE - Desdobra"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/login-register/index.js"></script>
+  </body>
+</html>
