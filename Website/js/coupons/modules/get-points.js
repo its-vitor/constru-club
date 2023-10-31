@@ -1,5 +1,5 @@
 export default function getPoints() {
-  const url = "construclub.squareweb.app";
+  const url = "https://construclub.squareweb.app";
   const pointsSpan = document.querySelector("#points");
   const userId = localStorage.key(0);
   const logout = document.querySelector("#logoutBtn");
