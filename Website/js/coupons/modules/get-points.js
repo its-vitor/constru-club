@@ -1,5 +1,5 @@
 export default function getPoints() {
-  const url = "http://127.0.0.1";
+  const url = "construclub.squareweb.app";
   const pointsSpan = document.querySelector("#points");
   const userId = localStorage.key(0);
   const logout = document.querySelector("#logoutBtn");
@@ -18,7 +18,7 @@ export default function getPoints() {
     };
 
     try {
-      const req = await fetch(`${url}:80/total/points`, config);
+      const req = await fetch(`${url}/total/points`, config);
       const res = await req.json();
       pointsSpan.innerText = res.totalPoints;
     } catch (error) {
