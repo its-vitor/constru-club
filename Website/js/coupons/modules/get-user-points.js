@@ -1,5 +1,5 @@
 export default function getUserPoints() {
-  const url = "http://127.0.0.1";
+  const url = "construclub.squareweb.app";
   const userPointsSpan = document.querySelector("#user-points");
   const userId = localStorage.key(0);
 
@@ -12,7 +12,7 @@ export default function getUserPoints() {
     };
 
     try {
-      const req = await fetch(`${url}:80/user/points`, config);
+      const req = await fetch(`${url}/user/points`, config);
       const res = await req.json();
 
       if (res.apiStatus === 200) {
