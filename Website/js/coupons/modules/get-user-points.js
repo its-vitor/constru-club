@@ -1,5 +1,5 @@
 export default function getUserPoints() {
-  const url = "construclub.squareweb.app";
+  const url = "https://construclub.squareweb.app";
   const userPointsSpan = document.querySelector("#user-points");
   const userId = localStorage.key(0);
 
