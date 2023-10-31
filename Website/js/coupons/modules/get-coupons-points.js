@@ -1,5 +1,5 @@
 export default function getCouponsPoints() {
-  const url = "construclub.squareweb.app";
+  const url = "https://construclub.squareweb.app";
   const userId = localStorage.key(0);
   const couponsList = document.querySelector("#coupons-list");
   console.log(couponsList);
