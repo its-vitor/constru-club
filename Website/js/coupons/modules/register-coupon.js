@@ -1,5 +1,5 @@
 export default function registerCoupon() {
-  const url = "construclub.squareweb.app";
+  const url = "https://construclub.squareweb.app";
   const userId = localStorage.key(0)
   const input = document.querySelector("#coupon");
   const submit = document.querySelector("#button-addon2");
