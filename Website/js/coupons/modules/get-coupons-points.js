@@ -1,5 +1,5 @@
 export default function getCouponsPoints() {
-  const url = "http://127.0.0.1";
+  const url = "construclub.squareweb.app";
   const userId = localStorage.key(0);
   const couponsList = document.querySelector("#coupons-list");
   console.log(couponsList);
@@ -16,7 +16,7 @@ export default function getCouponsPoints() {
 
     try {
       const req = await fetch(
-        `${url}:80/coupons/points?page=${numPage}`,
+        `${url}/coupons/points?page=${numPage}`,
         config
       );
       const res = await req.json();
