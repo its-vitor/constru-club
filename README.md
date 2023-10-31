@@ -19,3 +19,10 @@
   </tr>
 </table>
 <br><br>
+
+## Projeto
+O Constru-Club é um site desenvolvido para integrar o sistema de cupons com um mais novo sistema de pontos. A integração foi feita através de web-scraping, o banco de dados é o mongodb. As tecnologias são:
+- Pymongo
+- Flask
+- jsonwebtoken
+- HTML/css
