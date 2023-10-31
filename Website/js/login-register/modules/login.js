@@ -25,7 +25,7 @@ export default function login() {
       const res = await req.json();
 
       if (res.user_id) {
-        window.location = `${url}:5500/score.html`;
+        window.location = `score.html`;
         localStorage.setItem(res.user_id, res.token);
         erro.classList = "d-none card-text font-weight-bold text-danger";
       } else {
