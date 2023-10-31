@@ -1,5 +1,5 @@
 export default function registerCoupon() {
-  const url = "http://127.0.0.1";
+  const url = "construclub.squareweb.app";
   const userId = localStorage.key(0)
   const input = document.querySelector("#coupon");
   const submit = document.querySelector("#button-addon2");
@@ -22,7 +22,7 @@ export default function registerCoupon() {
     };
 
     try {
-      const req = await fetch(`${url}:80/coupon/register`, config)
+      const req = await fetch(`${url}/coupon/register`, config)
       const res = await req.json()
 
       if (res.apiStatus === 200) {
