@@ -1,7 +1,7 @@
 import ValidarCpf from "./validate-cpf.js";
 
 export default function register() {
-  const url = "http://127.0.0.1:80";
+  const url = "construclub.squareweb.app";
   const form = document.querySelectorAll("form")[1];
   const erro = document.querySelector("#register-error");
   const { name, email, cpf, password } = form;
