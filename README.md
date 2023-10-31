@@ -6,7 +6,13 @@
       </a>
     </td>
     <td>
-      <p></p>
+      <a href="https://www.instagram.com/desdobra.app/">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+      </a>
+      <br>
+      <a href="https://www.desdobrae.com.br">
+        <img src="https://img.shields.io/website-up-down-green-red/http/monip.org.svg">
+      </a>
     </td>
   </tr>
 </table>
