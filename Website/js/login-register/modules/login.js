@@ -1,5 +1,5 @@
 export default function login() {
-  const url = "construclub.squareweb.app";
+  const url = "https://construclub.squareweb.app";
   const form = document.querySelectorAll("form")[0];
   const erro = document.querySelector("#login-error");
   const { email, password } = form;
@@ -21,7 +21,7 @@ export default function login() {
     };
 
     try {
-      const req = await fetch(`${url}:80/login`, config);
+      const req = await fetch(`${url}/login`, config);
       const res = await req.json();
 
       if (res.user_id) {
