@@ -6,7 +6,7 @@ export default function getPoints() {
 
   function handleClick() {
     localStorage.removeItem(userId);
-    location = `${url}:5500`;
+    location = `${url}`;
   }
 
   async function points() {
@@ -27,7 +27,7 @@ export default function getPoints() {
         "Você não está logado. Deseja voltar para a tela de login e tentar novamente?"
       );
 
-      tryAgain ? (location.href = `${url}:5500`) : null;
+      tryAgain ? (location.href = `${url}`) : null;
     }
   }
 
