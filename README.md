@@ -26,4 +26,4 @@ O Constru-Club é um site desenvolvido para integrar o sistema de cupons com um 
 - Flask
 - jsonwebtoken
 - HTML/css
- 
+  
